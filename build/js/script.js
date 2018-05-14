@@ -1,0 +1,1 @@
+function render(n){var a="";$.each(n.list,function(n,t){a+="<li>"+t.title+"</li>"}),$("ul").html(a)}$.ajax({url:"/data",dataType:"json",success:function(n){render(n)}});
